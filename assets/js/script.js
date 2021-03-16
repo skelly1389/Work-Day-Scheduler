@@ -1,24 +1,28 @@
-var ctTime = moment('13','H').format('H');
+var ctTime = moment().format('H');
 
 function update() {
     var cTime = moment();
-    $('#currentDay').text(cTime.format('dddd, Do MMMM H:mm:ss'));
+    $('#currentDay').text(cTime.format('dddd, Do MMMM'));
 }
   setInterval(update, 1000);
 
 for(var i = 9; i<18; i++){
-    console.log(ctTime);
-    console.log(('#' + i));
     if(i > ctTime){
-        console.log('green')
-        $("#"+i).addClass("bg-success");
+        $('#'+i).addClass('bg-success');
     }
     else if(i < ctTime){
-        console.log('gray');
-        $("#"+i).addClass("bg-secondary");
+        $('#'+i).addClass('bg-secondary');
     }
     else{
-        console.log('red')
-        $("#"+i).addClass("bg-danger");
+        $('#'+i).addClass('bg-danger');
     }
 }
+
+$("a").click(function(event) {
+    event.preventDefault();
+    console.log($('#9').val());
+    for(var i = 9; i<18; i++){
+        var tempText = $('#' + i).val()
+        localStorage.setItem('#' + i, tempText);
+    }
+});
