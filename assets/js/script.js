@@ -3,9 +3,10 @@ var ctTime = moment().format('H');
 function startUp(){
     for(var j = 9; j<18; j++){
     var tempGrab = ('#' + j);
+    var tempString = localStorage.getItem(tempGrab);
     console.log(tempGrab);
-    console.log(localStorage.getItem(tempGrab));
-    // tempGrab.val(localStorage.getItem(tempGrab))
+    console.log(tempString);
+    $(tempGrab).val(tempString);
     }
 }
 function update() {
