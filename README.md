@@ -18,9 +18,9 @@ Live site at [https://skelly1389.github.io/Work-Day-Scheduler/](https://skelly13
 -Clicking colored section of time slot allows user to enter events as text inputs
 -Clicking the blue save button saves text input to local storage
 -On loading page saved inputs will automatically populate correct time slots
-
-    :
-    ![site in action](assets/screenshots/screenshot1.png)
+    
+:
+    ![Page in action](assets/screenshots/screenshot1.png)
     
 ## Credits
 
