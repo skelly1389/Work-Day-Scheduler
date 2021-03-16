@@ -1,5 +1,13 @@
 var ctTime = moment().format('H');
 
+function startUp(){
+    for(var j = 9; j<18; j++){
+    var tempGrab = ('#' + j);
+    console.log(tempGrab);
+    console.log(localStorage.getItem(tempGrab));
+    // tempGrab.val(localStorage.getItem(tempGrab))
+    }
+}
 function update() {
     var cTime = moment();
     $('#currentDay').text(cTime.format('dddd, Do MMMM'));
@@ -20,9 +28,10 @@ for(var i = 9; i<18; i++){
 
 $("a").click(function(event) {
     event.preventDefault();
-    console.log($('#9').val());
     for(var i = 9; i<18; i++){
         var tempText = $('#' + i).val()
         localStorage.setItem('#' + i, tempText);
     }
 });
+
+startUp();
