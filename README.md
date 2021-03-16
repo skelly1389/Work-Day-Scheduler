@@ -11,13 +11,15 @@ Live site at [https://skelly1389.github.io/Work-Day-Scheduler/](https://skelly13
 
 ## Usage
 
--Page will display time slots relative to current time as:
-    -Green: time is later in the day
-    -Red: current time
-    -Gray: time has already passed
--Clicking colored section of time slot allows user to enter events as text inputs
--Clicking the blue save button saves text input to local storage
--On loading page saved inputs will automatically populate correct time slots
+-Page will display time slots relative to current time as:  
+<ul>
+<li>Green: time is later in the day</li>
+<li>Red: current time</li>
+<li>Gray: time has already passed</li>
+</ul>
+-Clicking colored section of time slot allows user to enter events as text inputs <br>
+-Clicking the blue save button saves text input to local storage <br>
+-On loading page saved inputs will automatically populate correct time slots  
     
 :
     ![Page in action](assets/screenshots/screenshot1.png)
